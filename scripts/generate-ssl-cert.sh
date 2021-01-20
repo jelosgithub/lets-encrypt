@@ -101,6 +101,10 @@ function uploadCerts() {
 
 
     result_code=$?;
+    
+    result_code=6;
+    
+    
     [[ $result_code != 0 ]] && { echo "$uploadresult" && exit 6; }
     
     #Save urls to certificate files
