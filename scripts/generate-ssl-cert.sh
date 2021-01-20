@@ -97,11 +97,9 @@ function uploadCerts() {
     #Upload 3 certificate files
     uploadresult=$(curl -F "appid=$appid" -F "fid=privkey.pem" -F "file=@${certdir}/privkey.pem" -F "fid=fullchain.pem" -F "file=@${certdir}/chain.pem" -F "fid=cert.pem" -F "file=@${certdir}/cert.pem" http://$primarydomain/xssu/rest/upload)
 
-    uploadresult=6;
-
-
     result_code=$?;
-    
+
+
     result_code=6;
     
     
