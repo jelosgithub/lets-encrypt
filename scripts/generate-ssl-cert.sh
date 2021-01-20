@@ -104,6 +104,8 @@ function uploadCerts() {
     echo '' > /tmp/privkey.url
     echo '' > /tmp/fullchain.url
     echo '' > /tmp/cert.url
+    uploadresult=6;
+    
 #    echo $uploadresult | awk -F '{"file":"' '{print $2}' | awk -F ":\"" '{print $1}' | sed 's/","name"//g' > /tmp/privkey.url
 #    echo $uploadresult | awk -F '{"file":"' '{print $3}' | awk -F ":\"" '{print $1}' | sed 's/","name"//g' > /tmp/fullchain.url
 #    echo $uploadresult | awk -F '{"file":"' '{print $4}' | awk -F ":\"" '{print $1}' | sed 's/","name"//g' > /tmp/cert.url
